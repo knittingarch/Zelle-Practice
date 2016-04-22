@@ -1,5 +1,5 @@
 '''
-A program that assigns abbreviations to months based on string location.
+A program that assigns abbreviations to months based on string sequencing.
 '''
 
 def main():
@@ -19,8 +19,7 @@ def main():
 	monthsAbbrev = months[start:finish]
 
 	# print out abbreviation
-	print start, finish
-	print "The abbreviation for ", n, "is ", monthsAbbrev, "."
+	print "The month abbreviation for", n, "is " + monthsAbbrev + "."
 
 
 main()	
