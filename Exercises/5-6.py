@@ -12,27 +12,20 @@ def main():
 	low_name = full_name.lower()
 	single_name = low_name.split(" ")
 	
-	print low_name
-	print single_name
-	
+	# Creates empty bucket to receive the values that are going to be calculated below.
 	tally = 0
 
+	# Isolate each name
 	for item in single_name:
+		# Grab each letter in a single name	
 		for l in item:
+			# Take the letter, convert it to the ASCII number, and then subtract 96 to get the alpha number value
 			number = ord(l) - 96
 			print l + '=' + str(number) + ',',
+			# Adds each value to tally
 			tally += number
 
 	print '\nWoot!  Your full name adds up to a total of', tally, 'points!'		
 
-	# tally = 0
-
-	# for l in low_name:
-	# 	# gets the ascii number for the letter and subtracts 96 to get the actual number if starting at 1
-	# 	number = ord(l) - 96
-	# 	print l + '=' + str(number) + ',',
-	# 	tally += number
-	
-	# print '\nOooh!  Your name adds up to a total of', tally, 'points.'
-	
+		
 main()	
