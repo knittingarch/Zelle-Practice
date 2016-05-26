@@ -48,10 +48,8 @@ def main():
 			point1y = (win_height - (height * entry))
 			point2x = width
 			point2y = (win_height - (height * (entry) - height))
-
-			print point1x, point1y
-			print point2x, point2y
 			
+			# Add spacing after and above the label
 			name_labelx = point1x + 18
 			name_labely = point1y + 8
 
