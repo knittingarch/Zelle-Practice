@@ -16,13 +16,13 @@ def main():
 
 	if grade >= numbers[90]:
 		print 'You earned an A.'
-	elif numbers[80] < grade < numbers[90]:
+	elif grade >= numbers[80]:
 		print 'You earned an B.'
-	elif numbers[70] < grade < numbers[80]:
+	elif grade >= numbers[70]:
 		print 'You earned an C.'
-	elif numbers[60] < grade < numbers[70]:
+	elif grade >= numbers[60]:
 		print 'You earned an D.'
 	else:
-		print 'You earned an F'
+		print 'You earned an F.'
 
 main()
