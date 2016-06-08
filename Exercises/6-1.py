@@ -3,14 +3,11 @@
 
 
 yodel = "Ee-igh, Ee-igh, Oh!"
+farm_animals = [["cow", "moo"], ["pig", "oink"], ["duck", "quack"], ["horse", "neigh"], ["lamb", "baa"]]
 
 def HadAFarm():
 	setup = "Old MacDonald had a farm, "
 	print setup + yodel
-
-
-farm_animals = [["cow", "moo"], ["pig", "oink"], ["duck", "quack"], ["horse", "neigh"], ["lamb", "baa"]]
-
 
 def PickAnimal(animal, sound):
 	two_sounds = sound + ", " + sound
@@ -18,11 +15,9 @@ def PickAnimal(animal, sound):
 	print "With a " + two_sounds + " here and a " + two_sounds + " there."
 	print "Here a " + sound + ", there a " + sound + ", everywhere a " + two_sounds + "."
 
-
 def main():
 	for i in range(len(farm_animals)):
 		HadAFarm()
-		# PickAnimal("cow", "moo")
 		PickAnimal(farm_animals[i][0], farm_animals[i][1])
 		HadAFarm()
 		print
